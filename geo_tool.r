@@ -25,7 +25,7 @@ server <- function(input, output) {
       lapply(as.character(getData()$address), street2coordinates) %>% ldply
       )
     
-    cbind(getData(),y[,c('latitude','longitude')])
+    cbind(getData(),x[,c('latitude','longitude')])
     
   }
     
